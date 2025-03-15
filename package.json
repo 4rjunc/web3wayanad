@@ -1,17 +1,24 @@
+
 {
   "name": "web3wayanad",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "airdrop": "ts-node airdrop.ts",
-    "transfer": "ts-node transfer.ts",
-    "keygen": "ts-node keygen.ts"
+    "airdrop": "tsx airdrop.ts",
+    "transfer": "tsx transfer.ts",
+    "keygen": "tsx keygen.ts"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@solana/web3.js": "^1.98.0"
+    "@solana/web3.js": "^1.98.0",
+    "tsx": "^4.19.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
   }
 }
+
